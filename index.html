@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>SAE Games</title>
+</head>
+<body>
+  <header>
+    <h1 id="page-title">SAE GAMES</h1>
+    <br>
+    <img src="qr.png" alt="QR Code" id="qr-image">
+  </header>
+  <nav>
+    <ul class="tabs">
+      <li data-tab="Cup Pong" class="active">Pong</li>
+      <li data-tab="Darts">Darts</li>
+      <li data-tab="Billiards">Billiards</li>
+    </ul>
+  </nav>
+  <main>
+    <button id="admin-btn">Admin</button>
+    <div class="player-container">
+
+    </div>
+  </main>
+  <div id="admin-modal" class="modal">
+    <div class="modal-content">
+      <span id="exit-admin-btn" class="close">&times;</span>
+      <h2>Add New Player</h2>
+      <input type="text" id="player-name" placeholder="Player Name">
+      <button id="add-player-btn">Add Player</button>
+    </div>
+  </div>
+  <script src="script2.js"></script>
+
+  <script>
+    function refreshPage() {
+      location.reload();
+    }
+    setTimeout(refreshPage, 50000); 
+  </script>
+</body>
+</html>
